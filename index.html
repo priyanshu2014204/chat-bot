@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is bot app</title>
+</head>
+<body>
+    <button onclick="play()">Press here to active your bot</button>
+    <div class="append"></div>
+</body>
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+  function play(){
+const div=document.querySelector(".append");
+socket.emit("abc","rtc101")
+  }
+</script>
